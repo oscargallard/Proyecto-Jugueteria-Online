@@ -1,0 +1,101 @@
+/* Tarjeta para cada juguete */
+.contenedor-juguetes {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8px;    
+}
+
+.juguete {    
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra verticalmente */
+    margin: 10px;
+    padding: 10px;
+    background-color:#fdf9c450;    
+    border-radius: 10px;
+}
+
+.juguete img {    
+    display: block;
+    margin: 0 auto; /* Centra horizontalmente */
+    justify-content: center;
+    box-shadow: 10px 15px 20px rgba(119, 221, 119, 0.5);
+}
+
+.juguete h3 {
+    text-align: center;
+}
+
+.button-comprar {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    background-color: rgb(17, 24, 39);
+    color: #FFF;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 3s;
+  }
+
+  .button-comprar:hover {
+    background-color: rgb(75, 85, 99);
+  }
+/* _________________________________________________________________________ */
+/* Fromulario de contacto */
+form {    
+    max-width: 400px;
+    margin: 0 auto;
+}
+  
+label {
+    margin-bottom: 5px;
+}
+  
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+  
+/* Para el botón enviar se utilizo https://gradientbuttons.colorion.co/ */         
+.button-enviar {
+    background-image: linear-gradient(to right, #16222A 0%, #3A6073  51%, #16222A  100%);
+    margin: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;    
+  }
+
+  .button-enviar:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  } 
+  
+  /* Estilos para pantallas más grandes */
+  @media screen and (min-width: 501px) {
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    label {
+      margin-bottom: 10px;
+    }
+    
+    input, textarea {
+      padding: 12px;
+    }
+    
+    .button-enviar {
+      padding: 12px 24px;
+    }
+  }

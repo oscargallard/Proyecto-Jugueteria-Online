@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CasaJuegos</title>
+    <link rel="stylesheet" href="./assets/css/style2.css">
+    <link rel="stylesheet" href="./assets/css/style.css">    
+</head>
+<body>
+    <header>        
+        <div class="content-logo">
+          <img src="./assets/img/logo_1.png" alt="Logo">
+        </div>
+        <h1>CasaJuegos</h1>        
+        <!-- Barra de navegación -->
+        <nav>
+          <ul>
+            <li><a href="#home" class="success">Inicio</a></li>
+            <li><a href="./shop.html" class="success">Tienda</a></li>
+            <li><a href="#about" class="success">Nosotros</a></li>
+            <li><a href="#contact" class="success">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section id="home">
+          <h2>¡Bienvenido a CasaJuegos!</h2>
+          <p>Disponemos de una amplia selección de juguetes para todas las edades, desde bebés hasta adultos. Ya sea que esté buscando una nueva muñeca, un juego de construcción o un juego, tenemos algo para todos.</p>
+          <img src="./assets/img/family-with-toy.jpg" alt="Una familia en la jugueteria">
+
+          <p>También ofrecemos <span class="negrita">envío gratuito</span> en pedidos superiores a <span class="negrita">$25000</span>.</p>
+          <a href="./shop.html" class="warning">Ir a Tienda</a>
+        </section>        
+
+        <section id="about">
+          <h2>Sobre nosotros</h2>
+          <img src="../assets/img/family.jpg" alt="Foto familiar">
+          <p>Somos una tienda de juguetes de propiedad y operación familiar que ha estado en el negocio por más de 20 años. Nos apasiona ofrecer a nuestros clientes la mejor selección posible de juguetes al mejor precio posible.</p>
+          <p>Creemos que los juguetes son más que una forma de pasar el tiempo. Son una forma de despertar la creatividad, la imaginación y el aprendizaje. Estamos comprometidos a proporcionar a nuestros clientes juguetes que ayuden a sus hijos a crecer y desarrollarse.</p>
+        </section>
+
+        <section id="contact">
+          <h2>Contáctenos</h2>
+          <p>Puedes contactar con nosotros por teléfono, email o redes sociales.</p>
+          <ul>
+            <li><p>Teléfono: 0-800-555-2179</p></li>
+            <li><p>WhatsApp: +549-0385-154333777</p></li>
+            <li><p>Redes sociales: 
+              <a href="https://www.facebook.com/" class="warning">Facebook</a>, 
+              <a href="https://twitter.com/" class="warning">Twitter</a>, 
+              <a href="https://www.instagram.com/" class="warning">Instagram</a>
+            </p></li>
+          </ul>
+          <!-- formulario de contacto -->
+          <p class="negrita cursiva">Formulario</p>
+          <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="Nombre" required>
+            
+            <label for="last_name">Apellido:</label>
+            <input type="text" id="last_name" name="Apellido" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="Email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="Mensaje" required></textarea>
+
+            <button type="submit" class="button-enviar">Enviar</button>
+          </form>
+        </section>
+      </main>
+
+      <footer class="danger">
+        <p>Copyright &copy; 2023 | <span class="cursiva">CasaJuegos</span></p>
+      </footer>
+</body>
+</html>

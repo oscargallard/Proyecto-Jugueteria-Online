@@ -1,0 +1,167 @@
+body {
+    font-family:'Sour Gummy', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 20px;
+    cursor: url('../img/sword.png'), auto;
+    /* Se utilizo el color gradiente de https://hypercolor.dev/#gradients */
+    background: linear-gradient(to top, rgb(251, 146, 60), rgb(56, 189, 248));    
+  }
+
+  header {
+    width: 100%;    
+    margin-top: 15px;
+    text-align: center;        
+  }
+
+  .content-logo {
+    width: 150px;
+    height: 100px;
+    margin: auto;
+  }
+
+  .content-logo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  h1{    
+    font-size: 20px;
+    margin-top: 1px;
+    color: #00364C;
+    text-shadow: 2px 2px 1px #A56940;
+  }
+
+  nav {    
+    background-color: rgba(0, 0, 0, 0.700);
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul{    
+    list-style-type: none;
+    margin: 0%;
+    padding: auto;
+    display: flex;
+    justify-content: center;  
+  }
+
+  nav a {    
+    text-decoration: none;    
+    margin: 0 0.5em;
+    font-size: 1.2em;
+    display: block;
+    text-align: center;    
+  }
+
+  nav a:hover {
+    text-decoration: underline;    
+  }
+  
+  h2 {
+    font-size: 16px;
+    margin-top: 10;
+  }
+  
+  p {
+    margin-bottom: 12px;
+  }
+  
+  img {
+    max-width: 75%;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;         
+  }
+
+  .negrita { 
+    font-weight: bold; 
+  }
+
+  .cursiva { 
+    font-style: italic; 
+  }
+
+  /* Colores WCAG */
+ .primary {
+    color: #00BCD4;
+  }
+  
+  .secondary {
+    color: #81C784;
+  }
+  
+  .success {
+    color: #4CAF50;
+  }
+  
+  .warning {
+    color: #f44336;
+  }
+  
+  .danger {
+    color: #d32f2f;
+  }
+  
+  @font-face {
+    font-family: 'Sour Gummy';
+    src: url('../fonts/Sour-Gummy-VF.ttf');
+  }
+
+  /* Responsive Tablet */ 
+  @media (min-width: 501px) {
+    body {
+      font-size: 16px;      
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    p {
+      margin-bottom: 16px;
+    }
+  
+    img {
+      max-width: 85%;
+    }
+
+    .content-logo {
+      width: 160px;
+      height: 120px;
+    }
+  }
+  
+  /* Responsive Computadora de escritorio */
+@media (min-width: 801px) {
+  body {
+    font-size: 18px;    
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p {
+    margin-bottom: 18px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .content-logo {
+    width: 170px;
+    height: 140px;
+  }
+}
